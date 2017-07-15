@@ -11,7 +11,31 @@
     <h:body>
         Hello from Facelets
         <br />
-        <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
+      
+       <p:dataTable var ="alumno" value ="#{indexBean.alumnos}">
+                    <p:column  headerText="codAlumno">
+                        #{alumno.codAlumno}
+                    </p:column>
+                    <p:column  headerText="Nombre">
+                        #{alumno.nombre}
+                    </p:column>
+                    <p:column  headerText="Direccion">
+                        #{alumno.direccion}
+                    </p:column>
+                    <p:column  headerText="Telefono">
+                        #{alumno.telefono}
+                    </p:column>
+                    <p:column  headerText="Correo">
+                        #{alumno.correoElectronico}
+                    </p:column>
+                    <p:column  headerText="FechaNacimiento">
+                        #{alumno.fechaNacimiento}
+                    </p:column>
+                    <p:column  headerText="Genero">
+                        #{alumno.genero}
+                    </p:column>
+                </p:dataTable>	
+
     </h:body>
 </html>
 
